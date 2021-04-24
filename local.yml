@@ -1,7 +1,5 @@
+---
 - hosts: localhost
   gather_facts: no
-  tasks:
-      - debug: msg='Pulling from GIT'
-      - file: 
-            path: /tmp/dir
-            state: directory
+  roles:
+      - jenkins
